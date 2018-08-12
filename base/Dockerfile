@@ -1,5 +1,5 @@
-FROM debian:jessie
-MAINTAINER Jesse Rosenberger
+FROM ubuntu:18.10
+MAINTAINER Abdullah Dagli
 
 ENV METEORD_DIR /opt/meteord
 COPY scripts $METEORD_DIR
@@ -12,6 +12,8 @@ RUN bash $METEORD_DIR/lib/install_base.sh
 RUN bash $METEORD_DIR/lib/install_node.sh
 RUN bash $METEORD_DIR/lib/install_phantomjs.sh
 RUN bash $METEORD_DIR/lib/cleanup.sh
+
+RUN apt-get -y update && apt-get install -y ffmpeg
 
 EXPOSE 80
 RUN chmod +x $METEORD_DIR/run_app.sh
