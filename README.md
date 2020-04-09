@@ -29,6 +29,8 @@ Please see the explanation of the [tag variations](#tag-variations) (e.g. `-binb
 
 For brevity, not all possibilities are listed above and there are many more available.  It's recommended that you use the latest version within the series which your Meteor was designed for (see titles above).  The most recent version will be tagged with a `node-x-*` tag accordingly.  For the full list, please see the ["Tags" tab](https://hub.docker.com/r/abernix/meteord/tags/) above.
 
+### FFMPEG
+
 ## Tag Variations
 
 There are three variations of each major Node-based release.
